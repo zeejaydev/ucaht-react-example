@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ChatBubble from './chat.svg'
+import UChatWidget from './charComponentSrc/widget';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <UChatWidget wsUri="http://localhost:6001?company=zeejaydev" icon={ChatBubble} />
     </div>
   );
 }
